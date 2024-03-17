@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-white font-dmsans bg-primary tracking-wider;
+    }
+
+    section {
+        @apply flex flex-col md:py-10 lg:py-4 md:flex-row;
+    }
+}
+
+@layer utilities {
+    .headings {
+        @apply text-4xl uppercase font-bold px-4 font-oswald lg:text-6xl
+    } 
+
+    .paragraphs {
+        @apply text-paragraph leading-7 space-x-5 text-center px-8
+    }
+
+    .separator {
+        @apply h-[3px] w-52 bg-secondary my-5 rounded
+    }
+
+    .btn {
+        /* @apply py-3 px-8 bg-secondary */
+    }
+}
+
+.learnMore {
+    width: 120px !important;
+    height: 30px !important;
+    line-height: 30px;
+}
+
+.paragraphs,
+.btns__row {
+    margin-top: -15px;
+}
